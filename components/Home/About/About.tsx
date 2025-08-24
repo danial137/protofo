@@ -1,5 +1,6 @@
 import SectionHeading from '@/components/Helper/SectionHeading'
 import { aboutInfo } from '@/Data/data'
+import Image from 'next/image'
 import React from 'react'
 import { FaCheck } from 'react-icons/fa'
 
@@ -33,10 +34,38 @@ const About = () => {
                             <p className='text-sm sm:text-base md:text-lg font-bold text-gray-300'>Full stack Development</p>
                         </div>
                     </div>
-                    
+
                 </div>
                 {/* state content */}
-                <div></div>
+                <div className='grid grid-cols-2 gap-16 items-center lg:mx-auto'>
+                    <div>
+                        <Image src="/images/customer.png" alt="customer" width={80} height={80} className='mx-auto' />
+                        <p className='mt-3 font-bold text-xl text-white text-center'>{aboutInfo.client}</p>
+                        <p className='text-base sm:text-lg text-gray-400 text-center '>Setisfied Customers</p>
+                    </div>
+                    <div>
+                        <Image src="/images/experience.png" alt="customer" width={80} height={80} className='mx-auto' />
+                        <p className='mt-3 font-bold text-xl text-white text-center'>{aboutInfo.experience}</p>
+                        <p className='text-base sm:text-lg text-gray-400 text-center '>Years of Experience</p>
+                    </div>
+
+                    <div>
+                        <Image src="/images/completed.png" alt="customer" width={80} height={80} className='mx-auto' />
+                        <p className='mt-3 font-bold text-xl text-white text-center'>{aboutInfo.project}</p>
+                        <p className='text-base sm:text-lg text-gray-400 text-center '>Completed Projects</p>
+                    </div>
+
+
+                    <div>
+                        <Image src="/images/rocket.png" alt="customer" width={80} height={80} className='mx-auto' />
+                        <p className='mt-3 font-bold text-xl text-white text-center'>{aboutInfo.website}</p>
+                        <p className='text-base sm:text-lg text-gray-400 text-center '>Website launched</p>
+                    </div>
+
+
+
+
+                </div>
             </div>
         </div>
     )
