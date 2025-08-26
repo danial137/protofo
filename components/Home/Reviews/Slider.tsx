@@ -3,6 +3,7 @@ import { clientReviews } from '@/Data/data';
 import React from 'react'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import ReviewCard from './ReviewCard';
 
 const responsive = {
     desktop: {
@@ -27,7 +28,9 @@ const Slider = () => {
         <Carousel arrows={true} autoPlay={true} autoPlaySpeed={5000} infinite responsive={responsive}>
 
             {clientReviews.map((review) => {
-                return <div key={review.image}></div>
+                return <div key={review.image}>
+                    <ReviewCard review={ review} />
+                </div>
             })}
 
         </Carousel>
