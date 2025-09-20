@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import { HiBars3BottomRight } from 'react-icons/hi2'
+import { ThemeToggle } from '@/components/ThemeToggle'
 // define props
 type Props = {
     openNav: () => void;
@@ -43,6 +44,7 @@ const Nav = ({ openNav }: Props) => {
                     {/* button */}
 
                     <div className='flex items-center space-x-4'>
+                        <ThemeToggle />
                         <button className='md:px-10 md:py-3 px-8 py-3 text-blue-800 font-semibold sm:text-base text-sm bg-white hover:bg-gray-200 transition-all duration-200 rounded-lg'>
                             Hire Me
                         </button>
