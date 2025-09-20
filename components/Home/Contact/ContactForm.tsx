@@ -18,11 +18,11 @@ const ContactForm = () => {
                 </div>
 
                 <div>
-                    <select className='w-full bg-black mt-5 text-white placeholder:text-gray-600 px-6 py-3 rounded-md border-[1.5px] border-gray-200 border-opacity-15 outline-none '>
-                        <option value="">Select a subject</option>
+                    <select className='w-full bg-black mt-5 text-white placeholder:text-gray-600 px-4 py-3.5 rounded-md border-[1.5px] border-gray-200 border-opacity-15 outline-none '>
+                        <option value="" disabled selected>Select a subject</option>
                         <option value="web-development">Web Development</option>
-                        <option value="graphic-design">Graphic Design</option>
-                        <option value="seo">SEO</option>
+                        <option value="graphic-design">Frontend Development</option>
+                        <option value="seo">Full Stack Development</option>
                     </select>
                 </div>
 
